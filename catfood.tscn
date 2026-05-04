@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://d4babqgrjg1dg"]
+
+[ext_resource type="Texture2D" uid="uid://c6tbdva1ca6km" path="res://Cat Assets/Cat Bowl.png" id="1_jm7bi"]
+[ext_resource type="Texture2D" uid="uid://cmjlmuoforliy" path="res://Cat Assets/Cat Bowl Full.png" id="1_pil02"]
+[ext_resource type="Script" uid="uid://ur8nrpk6kt0t" path="res://catbowl.gd" id="2_pil02"]
+[ext_resource type="AudioStream" uid="uid://bwcepwk7y48iw" path="res://LifeGD Pickup Sound.wav" id="3_pil02"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y2uuw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jm7bi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_pil02")
+}],
+"loop": false,
+"name": &"bowl",
+"speed": 0.0
+}]
+
+[node name="Bowl" type="AnimatedSprite2D" unique_id=1700711379 node_paths=PackedStringArray("audio_stream_player", "area_2d") groups=["Clothing"]]
+sprite_frames = SubResource("SpriteFrames_y2uuw")
+animation = &"bowl"
+script = ExtResource("2_pil02")
+audio_stream_player = NodePath("AudioStreamPlayer")
+area_2d = NodePath("Area2D")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1226396512]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1606803784]
+polygon = PackedVector2Array(-430, -107, 419, -105, 419, 313, -426, 317)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1137546783]
+stream = ExtResource("3_pil02")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cq4sfkyov2yex"]
+
+[ext_resource type="AudioStream" uid="uid://1micpp4wjj6w" path="res://LifeGD Success Sound.wav" id="1_a4b2u"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=717205498]
+stream = ExtResource("1_a4b2u")

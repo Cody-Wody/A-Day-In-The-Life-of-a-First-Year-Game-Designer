@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://bmhlws33ca5iv"]
+
+[ext_resource type="Script" uid="uid://dkgmyrh00dfc0" path="res://pet_cats.gd" id="1_otc2p"]
+[ext_resource type="Texture2D" uid="uid://cujlrq0mhjw3v" path="res://Cat Assets/Cats - Charlie.png" id="1_pd52j"]
+[ext_resource type="Texture2D" uid="uid://ow7q142xso8c" path="res://Cat Assets/Cat Pics/Charlie Yawn.jpeg" id="2_brwxd"]
+[ext_resource type="Texture2D" uid="uid://clr5xw17iip7y" path="res://Cat Assets/GDLife - Cats Background.png" id="2_tj3xi"]
+[ext_resource type="Texture2D" uid="uid://c0tv6dc5pi0m6" path="res://Cat Assets/Cat Pics/Oscar Yawn.png" id="2_ug6qi"]
+[ext_resource type="Texture2D" uid="uid://jvtnykuulmep" path="res://Cat Assets/Cats - Oscar.png" id="3_otc2p"]
+[ext_resource type="Texture2D" uid="uid://4kelnh36dokt" path="res://Cat Assets/Cats - Nala.png" id="5_tal6u"]
+[ext_resource type="Texture2D" uid="uid://bisugm2eg3wxg" path="res://Cat Assets/Cat Pics/Nala Stare.png" id="6_otc2p"]
+[ext_resource type="AudioStream" uid="uid://1micpp4wjj6w" path="res://LifeGD Success Sound.wav" id="10_1f4eo"]
+[ext_resource type="Texture2D" uid="uid://cmjlmuoforliy" path="res://Cat Assets/Cat Bowl Full.png" id="10_4wst2"]
+[ext_resource type="PackedScene" uid="uid://d4babqgrjg1dg" path="res://catfood.tscn" id="10_5dedr"]
+[ext_resource type="Texture2D" uid="uid://dg56p8s035jvl" path="res://Cat Assets/Cat Food.png" id="10_tj3xi"]
+[ext_resource type="Script" uid="uid://dd7e2atje86do" path="res://cat_food.gd" id="11_5dedr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1f4eo"]
+size = Vector2(557.3417, 810)
+
+[node name="Node2D" type="Node2D" unique_id=271932504]
+script = ExtResource("1_otc2p")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=252475041]
+anchor_mode = 0
+
+[node name="GdLifeCatsBackground" type="Sprite2D" parent="." unique_id=1346697623]
+position = Vector2(960, 540)
+texture = ExtResource("2_tj3xi")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=590156471]
+offset_top = 179.0
+offset_right = 12800.0
+offset_bottom = 4179.0
+scale = Vector2(0.15, 0.15)
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 500
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=787197549]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="Charlie Button" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=865780480]
+custom_minimum_size = Vector2(3250, 0)
+layout_mode = 2
+texture_normal = ExtResource("1_pd52j")
+texture_pressed = ExtResource("2_brwxd")
+stretch_mode = 0
+
+[node name="Oscar Button" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1046665532]
+custom_minimum_size = Vector2(3250, 0)
+layout_mode = 2
+texture_normal = ExtResource("3_otc2p")
+texture_pressed = ExtResource("2_ug6qi")
+stretch_mode = 0
+
+[node name="Nala Button" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=2098862109]
+custom_minimum_size = Vector2(3250, 0)
+layout_mode = 2
+texture_normal = ExtResource("5_tal6u")
+texture_pressed = ExtResource("6_otc2p")
+stretch_mode = 0
+
+[node name="CharlieBowlF" type="Sprite2D" parent="." unique_id=1899282581 groups=["Clothing"]]
+position = Vector2(442, 760)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("10_4wst2")
+
+[node name="OscarBowlF" type="Sprite2D" parent="." unique_id=1084769495 groups=["Clothing"]]
+position = Vector2(950, 760)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("10_4wst2")
+
+[node name="NalaBowlF" type="Sprite2D" parent="." unique_id=1564042828 groups=["Clothing"]]
+position = Vector2(1466.0001, 760.00006)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("10_4wst2")
+
+[node name="NalaBowlE" parent="." unique_id=488543471 instance=ExtResource("10_5dedr")]
+position = Vector2(1466, 760)
+scale = Vector2(0.4, 0.4)
+perfect_position = Vector2(1460, 745)
+position_forgiveness = Vector2(50, 50)
+
+[node name="OscarBowlE" parent="." unique_id=1699318827 instance=ExtResource("10_5dedr")]
+position = Vector2(950, 760)
+scale = Vector2(0.4, 0.4)
+perfect_position = Vector2(960, 745)
+position_forgiveness = Vector2(50, 50)
+
+[node name="CharlieBowlE" parent="." unique_id=1938292530 instance=ExtResource("10_5dedr")]
+position = Vector2(442, 760)
+scale = Vector2(0.4, 0.4)
+perfect_position = Vector2(458, 745)
+position_forgiveness = Vector2(100, 100)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1828248541]
+stream = ExtResource("10_1f4eo")
+
+[node name="CatFood" type="Sprite2D" parent="." unique_id=2012708938 node_paths=PackedStringArray("area_2d", "area_hitbox")]
+position = Vector2(131, 374)
+scale = Vector2(0.398, 0.398)
+texture = ExtResource("10_tj3xi")
+script = ExtResource("11_5dedr")
+area_2d = NodePath("Area2D")
+area_hitbox = NodePath("Area2D/CollisionShape2D")
+
+[node name="Area2D" type="Area2D" parent="CatFood" unique_id=243463045]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CatFood/Area2D" unique_id=2045783997]
+position = Vector2(0, -2.512558)
+shape = SubResource("RectangleShape2D_1f4eo")
+
+[connection signal="button_down" from="MarginContainer/HBoxContainer/Charlie Button" to="." method="_on_charlie_button_button_down"]
+[connection signal="button_down" from="MarginContainer/HBoxContainer/Oscar Button" to="." method="_on_oscar_button_button_down"]
+[connection signal="button_down" from="MarginContainer/HBoxContainer/Nala Button" to="." method="_on_nala_button_button_down"]
+[connection signal="input_event" from="CatFood/Area2D" to="CatFood" method="_on_area_2d_input_event"]

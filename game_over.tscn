@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://dgv21ioh4l3i3"]
+
+[ext_resource type="Script" uid="uid://37xthqsitdyw" path="res://game_over.gd" id="1_ccer4"]
+[ext_resource type="Script" uid="uid://b246t6m8y0h4g" path="res://button.gd" id="1_yxx3c"]
+[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://fonts/Super Mindset.ttf" id="3_8u835"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8u835"]
+line_spacing = 0.0
+font = ExtResource("3_8u835")
+font_size = 200
+font_color = Color(1, 0, 0, 1)
+
+[node name="Game Over" type="CanvasLayer" unique_id=2041456097]
+script = ExtResource("1_ccer4")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=217060510]
+anchor_mode = 0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=971980448]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=669493518]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1546542929]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=277537417]
+layout_mode = 2
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_8u835")
+horizontal_alignment = 1
+
+[node name="MenuOptions" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=2031260056]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Try Again Button" type="Button" parent="MarginContainer/VBoxContainer/MenuOptions" unique_id=1804169020]
+custom_minimum_size = Vector2(975, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8u835")
+theme_override_font_sizes/font_size = 50
+text = "Try Again
+
+"
+script = ExtResource("1_yxx3c")
+
+[node name="Main Menu Button" type="Button" parent="MarginContainer/VBoxContainer/MenuOptions" unique_id=1636872354]
+custom_minimum_size = Vector2(975, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8u835")
+theme_override_font_sizes/font_size = 50
+text = "Main Menu
+
+"
+script = ExtResource("1_yxx3c")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/Try Again Button" to="." method="_on_try_again_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/Main Menu Button" to="." method="_on_main_menu_button_pressed"]

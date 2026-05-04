@@ -1,0 +1,244 @@
+[gd_scene format=3 uid="uid://c0lt8qd2i67qd"]
+
+[ext_resource type="Script" uid="uid://dqp4umtjsm4qe" path="res://player.gd" id="1_7ve1f"]
+[ext_resource type="Script" uid="uid://c4ybdd68bacuf" path="res://car_spawner.gd" id="2_mffu6"]
+[ext_resource type="PackedScene" uid="uid://bioh1vuawnlko" path="res://car.tscn" id="2_ywjs7"]
+
+[sub_resource type="Environment" id="Environment_spiaq"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_spiaq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_spiaq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ve1f"]
+size = Vector3(10, 10, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ywjs7"]
+size = Vector3(10, 10, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ywjs7"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mffu6"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mffu6"]
+size = Vector3(1, 3, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pb855"]
+size = Vector3(1, 3, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1d60u"]
+size = Vector3(1, 3, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_m2x24"]
+size = Vector3(1, 3, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pb855"]
+size = Vector3(30, 1, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1d60u"]
+size = Vector3(30, 1, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m2x24"]
+size = Vector3(182, 1, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_auc13"]
+size = Vector3(182, 1, 2)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7ve1f"]
+size = Vector2(1000, 1000)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ve1f"]
+albedo_color = Color(0.2036809, 0.20368093, 0.2036809, 1)
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ywjs7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7ve1f"]
+size = Vector3(30, 10, 180)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ywjs7"]
+albedo_color = Color(0.03137255, 1, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_auc13"]
+size = Vector3(30, 10, 180)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jo7vb"]
+size = Vector3(30, 10, 250)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbyiy"]
+size = Vector3(30, 10, 250)
+
+[node name="Node3D" type="Node3D" unique_id=1752233947]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1364936943]
+environment = SubResource("Environment_spiaq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=22850781]
+transform = Transform3D(0.6830126, -0.2588191, 0.6830127, -0.7071068, 1.179138e-08, 0.70710677, -0.18301274, -0.9659258, -0.18301277, 20, 20, -16)
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=860085421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1.7565951, 0)
+script = ExtResource("1_7ve1f")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1501404235]
+mesh = SubResource("CapsuleMesh_spiaq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1423634757]
+shape = SubResource("CapsuleShape3D_spiaq")
+
+[node name="Camera3D" type="Camera3D" parent="Player" unique_id=1624908813]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5517185, 0)
+
+[node name="Car Spawner" type="Node3D" parent="." unique_id=1684024775 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 2, -203.1269)
+script = ExtResource("2_mffu6")
+car_scene = ExtResource("2_ywjs7")
+speed = null
+road_width = null
+spawn_z = 1
+player = NodePath("../Player")
+stop_distance = null
+
+[node name="Timer" type="Timer" parent="Car Spawner" unique_id=130513860]
+wait_time = 0.5
+autostart = true
+
+[node name="House" type="StaticBody3D" parent="." unique_id=531289615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3.3914642)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House" unique_id=662862906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 6)
+shape = SubResource("BoxShape3D_7ve1f")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="House" unique_id=70549468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 6)
+mesh = SubResource("BoxMesh_ywjs7")
+
+[node name="House2" type="StaticBody3D" parent="." unique_id=1441792850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, 3.3914642)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House2" unique_id=319285363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 6)
+shape = SubResource("BoxShape3D_7ve1f")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="House2" unique_id=696014493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 6)
+mesh = SubResource("BoxMesh_ywjs7")
+
+[node name="Driveway" type="StaticBody3D" parent="." unique_id=758541621]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Driveway" unique_id=1925018894]
+shape = SubResource("BoxShape3D_ywjs7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Driveway" unique_id=218793246]
+mesh = SubResource("BoxMesh_mffu6")
+
+[node name="Driveway2" type="StaticBody3D" parent="." unique_id=865155412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Driveway2" unique_id=1118671083]
+shape = SubResource("BoxShape3D_ywjs7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Driveway2" unique_id=987079676]
+mesh = SubResource("BoxMesh_mffu6")
+
+[node name="Driveway Wall" type="StaticBody3D" parent="." unique_id=903958305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Driveway Wall" unique_id=1863727789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_mffu6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Driveway Wall" unique_id=1178725165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_pb855")
+
+[node name="Driveway Wall2" type="StaticBody3D" parent="." unique_id=1470678360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Driveway Wall2" unique_id=313117426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_mffu6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Driveway Wall2" unique_id=1508920766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_pb855")
+
+[node name="Driveway Big Wall" type="StaticBody3D" parent="." unique_id=1452657204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, -5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Driveway Big Wall" unique_id=2040517184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_1d60u")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Driveway Big Wall" unique_id=2099492107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_m2x24")
+
+[node name="Footpath 1" type="StaticBody3D" parent="." unique_id=369772225]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -4.925407)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Footpath 1" unique_id=764962639]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1)
+shape = SubResource("BoxShape3D_pb855")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Footpath 1" unique_id=1375621831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1)
+mesh = SubResource("BoxMesh_1d60u")
+
+[node name="Footpath 2" type="StaticBody3D" parent="." unique_id=1599804404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -12.925407)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Footpath 2" unique_id=79235725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1)
+shape = SubResource("BoxShape3D_pb855")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Footpath 2" unique_id=1464118150]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1)
+mesh = SubResource("BoxMesh_1d60u")
+
+[node name="Footpath 3" type="StaticBody3D" parent="." unique_id=1590798302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -71.92541)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Footpath 3" unique_id=1697552957]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18, 0, -32)
+shape = SubResource("BoxShape3D_m2x24")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Footpath 3" unique_id=726624635]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -18, 0, -32)
+mesh = SubResource("BoxMesh_auc13")
+
+[node name="Road" type="StaticBody3D" parent="." unique_id=778370038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Road" unique_id=466163407]
+mesh = SubResource("PlaneMesh_7ve1f")
+surface_material_override/0 = SubResource("StandardMaterial3D_7ve1f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Road" unique_id=1704519095]
+shape = SubResource("WorldBoundaryShape3D_ywjs7")
+
+[node name="Forest" type="StaticBody3D" parent="." unique_id=1465079594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -104.9)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Forest" unique_id=1554090273]
+mesh = SubResource("BoxMesh_7ve1f")
+surface_material_override/0 = SubResource("StandardMaterial3D_ywjs7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Forest" unique_id=971023756]
+shape = SubResource("BoxShape3D_auc13")
+
+[node name="Forest2" type="StaticBody3D" parent="." unique_id=834014622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 5, -104.9)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Forest2" unique_id=1716552110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 35)
+mesh = SubResource("BoxMesh_jo7vb")
+surface_material_override/0 = SubResource("StandardMaterial3D_ywjs7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Forest2" unique_id=821239860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 35)
+shape = SubResource("BoxShape3D_pbyiy")
+
+[connection signal="timeout" from="Car Spawner/Timer" to="Car Spawner" method="_on_timer_timeout"]

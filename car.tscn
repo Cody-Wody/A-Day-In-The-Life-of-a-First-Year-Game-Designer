@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://bioh1vuawnlko"]
+
+[ext_resource type="Script" uid="uid://bsyo0cjs83gry" path="res://car.gd" id="1_7822p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7822p"]
+albedo_color = Color(0.12941177, 0.12941177, 0.12941177, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_72krn"]
+albedo_color = Color(0.12941177, 0.12941177, 0.12941177, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uoj53"]
+albedo_color = Color(0.1288298, 0.12882978, 0.12882978, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v0hk8"]
+albedo_color = Color(0.12941177, 0.12941177, 0.12941177, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k61xc"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_06lh1"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jo7vb"]
+size = Vector3(3, 2, 5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mjudg"]
+albedo_color = Color(0.47000003, 0.5053333, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_td361"]
+albedo_color = Color(0.21595564, 0.78875846, 0.95806915, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lpol0"]
+
+[node name="Car" type="StaticBody3D" unique_id=426786319]
+script = ExtResource("1_7822p")
+speed = 20
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="." unique_id=689761455]
+transform = Transform3D(-4.371139e-08, 1, -8.742278e-08, 1, 4.371139e-08, -3.5527137e-15, 0, -8.742278e-08, -1, 0.003948927, -1.0204904, 1.2484144)
+height = 3.2
+material = SubResource("StandardMaterial3D_7822p")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCylinder3D3" unique_id=1597149205]
+transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 2, 0, 0, 0)
+operation = 2
+material = SubResource("StandardMaterial3D_72krn")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="." unique_id=813151809]
+transform = Transform3D(-4.371139e-08, 1, -8.742278e-08, 1, 4.371139e-08, -3.5527137e-15, 0, -8.742278e-08, -1, 0.003948927, -1.0204904, -1.7515856)
+height = 3.2
+material = SubResource("StandardMaterial3D_uoj53")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCylinder3D4" unique_id=1941864169]
+transform = Transform3D(1, -5.871691e-23, 0, 0, 2.5, 0, 0, 0, 2, 0, -6.0535967e-09, -0.067887545)
+operation = 2
+material = SubResource("StandardMaterial3D_v0hk8")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1684583760]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.99802554, -0.47963193, 2.1215525)
+radius = 0.4
+height = 1.0
+material = SubResource("StandardMaterial3D_k61xc")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="." unique_id=1762152794]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.0019745, -0.47963193, 2.1215525)
+radius = 0.4
+height = 1.0
+material = SubResource("StandardMaterial3D_06lh1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1415853771]
+shape = SubResource("BoxShape3D_jo7vb")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1400894207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+size = Vector3(3, 1, 5)
+material = SubResource("StandardMaterial3D_mjudg")
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="." unique_id=437079431]
+transform = Transform3D(-4.6849368e-07, 0, 0.95, 0, 0.9, 0, -0.9, 0, -4.9452115e-07, 1.4147118, 0, -0.049)
+polygon = PackedVector2Array(-1, 0, 0, 1, 1, 1, 2, 0, 0, 0)
+depth = 3.0
+material = SubResource("StandardMaterial3D_td361")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="." unique_id=1446636671]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.5, 0, 0)
+polygon = PackedVector2Array(-1, 0, 0, 1, 1, 1, 2, 0, 0, 0)
+depth = 3.0
+material = SubResource("StandardMaterial3D_lpol0")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="CSGPolygon3D" unique_id=795782933]
+transform = Transform3D(-0.8, 0, -3.0199158e-07, 0, 0.8, 0, 1.2079664e-07, 0, -2, 0.9, 0, -4.5)
+operation = 2
+polygon = PackedVector2Array(-1, 0, 0, 1, 1, 1, 2, 0, 0, 0)
+depth = 3.0
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGPolygon3D" unique_id=1942652816]
+transform = Transform3D(2, 0, 0, 0, 0.8, 0, 0, 0, 2.8, -0.37424642, 0.400356, -1.5083578)
+operation = 2

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c3xt2fc1g1kyc"]
+
+[ext_resource type="Texture2D" uid="uid://dkoghm6lxyal8" path="res://Dress-Up Assets/Dress-up Game Jeans.png" id="1_mdrij"]
+[ext_resource type="Script" uid="uid://dbmut3yphfaaq" path="res://drag_and_drop.gd" id="2_undmj"]
+[ext_resource type="AudioStream" uid="uid://bwcepwk7y48iw" path="res://LifeGD Pickup Sound.wav" id="3_wvamo"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=488543471 node_paths=PackedStringArray("audio_stream_player", "area_2d") groups=["Clothing"]]
+texture = ExtResource("1_mdrij")
+script = ExtResource("2_undmj")
+audio_stream_player = NodePath("AudioStreamPlayer")
+area_2d = NodePath("Area2D")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1226396512]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=286071807]
+position = Vector2(0, 120)
+polygon = PackedVector2Array(-98, -126, -74, -103, 0, -87, 74, -103, 98, -126, 106, -106, 109, 36, 76, 248, 67, 264, 34, 271, -40, 271, -67, 264, -75, 243, -107, 34, -104, -104)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1698288296]
+stream = ExtResource("3_wvamo")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

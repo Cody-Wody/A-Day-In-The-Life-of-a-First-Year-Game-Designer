@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://br5a0rtbxedhq"]
+
+[ext_resource type="Script" uid="uid://cqxo4cfbfyti1" path="res://mainmenu.gd" id="1_d2nv2"]
+[ext_resource type="Script" uid="uid://b246t6m8y0h4g" path="res://button.gd" id="2_igs2m"]
+[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://Super Mindset.ttf" id="2_wgsso"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_i26rj"]
+line_spacing = 0.0
+font = ExtResource("2_wgsso")
+font_size = 120
+
+[node name="Main Menu" type="Node2D" unique_id=1297448253]
+script = ExtResource("1_d2nv2")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=352280768]
+anchor_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=840160184]
+offset_right = 1920.0
+offset_bottom = 1146.0
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 300
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1280496502]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=615978356]
+layout_mode = 2
+text = "A Day in the Life of a First Year 
+Game Design Student"
+label_settings = SubResource("LabelSettings_i26rj")
+horizontal_alignment = 1
+
+[node name="MenuOptions" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=461462605]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="MarginContainer/VBoxContainer/MenuOptions" unique_id=344463622]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_wgsso")
+theme_override_font_sizes/font_size = 50
+text = "Story Mode
+"
+script = ExtResource("2_igs2m")
+
+[node name="PlayButton2" type="Button" parent="MarginContainer/VBoxContainer/MenuOptions" unique_id=504164903]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_wgsso")
+theme_override_font_sizes/font_size = 50
+text = "60 Second Rush
+"
+script = ExtResource("2_igs2m")
+
+[node name="CreditsButton" type="Button" parent="MarginContainer/VBoxContainer/MenuOptions" unique_id=2018663711]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_wgsso")
+theme_override_font_sizes/font_size = 50
+text = "Credits
+
+"
+script = ExtResource("2_igs2m")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/PlayButton2" to="." method="_on_play_button_2_pressed"]

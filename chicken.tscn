@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bc7xpm4hskk54"]
+
+[ext_resource type="PackedScene" uid="uid://yrejli74xwru" path="res://Chicken.gltf" id="1_isa2u"]
+[ext_resource type="Script" uid="uid://7sbgung7hr81" path="res://enemy.gd" id="1_tl7hd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jo7vb"]
+size = Vector3(1, 1.2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_isa2u"]
+
+[node name="Enemy" type="CharacterBody3D" unique_id=1714695115]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 0, 0, 0)
+script = ExtResource("1_tl7hd")
+
+[node name="Hitbox" type="CollisionShape3D" parent="." unique_id=1638791538]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.8, 0, 0.6, 0)
+shape = SubResource("BoxShape3D_jo7vb")
+
+[node name="Chicken" parent="." unique_id=1627311536 instance=ExtResource("1_isa2u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.25, 0, 0)
+
+[node name="Muzzle" type="Marker3D" parent="." unique_id=1648125013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42751026, 0.73713803, 0)
+
+[node name="ShootTimer" type="Timer" parent="." unique_id=1498616217]
+
+[node name="Hurtbox" type="Area3D" parent="." unique_id=681065320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hurtbox" unique_id=2136541657]
+shape = SubResource("BoxShape3D_isa2u")
+
+[connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]

@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://bmhlws33ca5iv"]
+
+[ext_resource type="Script" uid="uid://dkgmyrh00dfc0" path="res://pet_cats.gd" id="1_otc2p"]
+[ext_resource type="Texture2D" uid="uid://cujlrq0mhjw3v" path="res://Cats - Charlie.png" id="1_pd52j"]
+[ext_resource type="Texture2D" uid="uid://ow7q142xso8c" path="res://Cat Pics/Charlie Yawn.jpeg" id="2_brwxd"]
+[ext_resource type="Texture2D" uid="uid://c6tbdva1ca6km" path="res://Cat Bowl.png" id="2_tal6u"]
+[ext_resource type="Texture2D" uid="uid://c0tv6dc5pi0m6" path="res://Cat Pics/Oscar Yawn.png" id="2_ug6qi"]
+[ext_resource type="Texture2D" uid="uid://jvtnykuulmep" path="res://Cats - Oscar.png" id="3_otc2p"]
+[ext_resource type="Texture2D" uid="uid://4kelnh36dokt" path="res://Cats - Nala.png" id="5_tal6u"]
+[ext_resource type="Texture2D" uid="uid://bisugm2eg3wxg" path="res://Cat Pics/Nala Stare.png" id="6_otc2p"]
+[ext_resource type="Script" uid="uid://cpfldiwpuppwn" path="res://cat_bowl.gd" id="9_5dedr"]
+[ext_resource type="AudioStream" uid="uid://1micpp4wjj6w" path="res://LifeGD Success Sound.wav" id="10_1f4eo"]
+[ext_resource type="PackedScene" uid="uid://d4babqgrjg1dg" path="res://catfood.tscn" id="10_5dedr"]
+
+[node name="Node2D" type="Node2D" unique_id=271932504]
+script = ExtResource("1_otc2p")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=252475041]
+anchor_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=590156471]
+offset_top = 179.0
+offset_right = 12800.0
+offset_bottom = 4179.0
+scale = Vector2(0.15, 0.15)
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 500
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=787197549]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="Charlie Button" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=865780480]
+custom_minimum_size = Vector2(3250, 0)
+layout_mode = 2
+texture_normal = ExtResource("1_pd52j")
+texture_pressed = ExtResource("2_brwxd")
+stretch_mode = 0
+
+[node name="Oscar Button" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1046665532]
+custom_minimum_size = Vector2(3250, 0)
+layout_mode = 2
+texture_normal = ExtResource("3_otc2p")
+texture_pressed = ExtResource("2_ug6qi")
+stretch_mode = 0
+
+[node name="Nala Button" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=2098862109]
+custom_minimum_size = Vector2(3250, 0)
+layout_mode = 2
+texture_normal = ExtResource("5_tal6u")
+texture_pressed = ExtResource("6_otc2p")
+stretch_mode = 0
+
+[node name="CatBowl" type="Sprite2D" parent="." unique_id=679962039]
+position = Vector2(460, 716)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_tal6u")
+script = ExtResource("9_5dedr")
+
+[node name="CatBowl2" type="Sprite2D" parent="." unique_id=112059013]
+position = Vector2(960, 716)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_tal6u")
+
+[node name="CatBowl3" type="Sprite2D" parent="." unique_id=2109475215]
+position = Vector2(1460, 716)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_tal6u")
+
+[node name="Cat Food3" parent="." unique_id=488543471 instance=ExtResource("10_5dedr")]
+position = Vector2(148, 474.00003)
+scale = Vector2(0.4, 0.4)
+perfect_position = Vector2(1460, 745)
+position_forgiveness = Vector2(50, 50)
+
+[node name="Cat Food2" parent="." unique_id=1699318827 instance=ExtResource("10_5dedr")]
+position = Vector2(148, 474.00003)
+scale = Vector2(0.4, 0.4)
+perfect_position = Vector2(960, 745)
+position_forgiveness = Vector2(50, 50)
+
+[node name="Cat Food" parent="." unique_id=1938292530 instance=ExtResource("10_5dedr")]
+position = Vector2(148.00012, 474.00003)
+scale = Vector2(0.4, 0.4)
+perfect_position = Vector2(458, 745)
+position_forgiveness = Vector2(50, 50)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1828248541]
+stream = ExtResource("10_1f4eo")
+
+[connection signal="button_down" from="MarginContainer/HBoxContainer/Charlie Button" to="." method="_on_charlie_button_button_down"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Charlie Button" to="." method="_on_charlie_button_pressed"]
+[connection signal="button_down" from="MarginContainer/HBoxContainer/Oscar Button" to="." method="_on_oscar_button_button_down"]
+[connection signal="button_down" from="MarginContainer/HBoxContainer/Nala Button" to="." method="_on_nala_button_button_down"]

@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dx52cjaxx6n3f"]
+
+[ext_resource type="Script" uid="uid://dqidcy425ryej" path="res://dressup.gd" id="1_ak2qx"]
+[ext_resource type="Texture2D" uid="uid://m6t8cl3rqbvq" path="res://Dress-Up Assets/Dress-up Game Base.png" id="1_b04ev"]
+[ext_resource type="Texture2D" uid="uid://bmdscvb0g7ann" path="res://GDLife - Dress-Up Background.png" id="2_0uia8"]
+[ext_resource type="PackedScene" uid="uid://c3xt2fc1g1kyc" path="res://outfit-jeans.tscn" id="2_cj3ah"]
+[ext_resource type="PackedScene" uid="uid://kvaakvj423kr" path="res://outfit-shirt.tscn" id="3_bym3q"]
+[ext_resource type="PackedScene" uid="uid://cmxoa5837tg14" path="res://outfit-shoes.tscn" id="4_ta1bk"]
+[ext_resource type="PackedScene" uid="uid://c1lnbi1sri01w" path="res://outfit-jacket.tscn" id="5_dglhs"]
+[ext_resource type="AudioStream" uid="uid://1micpp4wjj6w" path="res://LifeGD Success Sound.wav" id="7_dau7d"]
+
+[node name="Dress-Up Game" type="Node2D" unique_id=1691878615]
+script = ExtResource("1_ak2qx")
+
+[node name="GdLifeDressUpBackground" type="Sprite2D" parent="." unique_id=1507463339]
+position = Vector2(960, 540)
+texture = ExtResource("2_0uia8")
+
+[node name="DressUpGameBase" type="Sprite2D" parent="." unique_id=365579268]
+position = Vector2(960, 520)
+texture = ExtResource("1_b04ev")
+
+[node name="Shoes" parent="." unique_id=73526710 instance=ExtResource("4_ta1bk")]
+position = Vector2(407, -174)
+perfect_position = Vector2(960, 517)
+
+[node name="Jeans" parent="." unique_id=488543471 instance=ExtResource("2_cj3ah")]
+position = Vector2(1611, 147)
+perfect_position = Vector2(960, 520)
+
+[node name="Shirt" parent="." unique_id=808774601 instance=ExtResource("3_bym3q")]
+position = Vector2(1540, 931)
+perfect_position = Vector2(960, 520)
+
+[node name="Jacket" parent="." unique_id=2104181188 instance=ExtResource("5_dglhs")]
+position = Vector2(427, 869)
+perfect_position = Vector2(960, 520)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1717941216]
+stream = ExtResource("7_dau7d")

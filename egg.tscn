@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b2jbso6smmij4"]
+
+[ext_resource type="Script" uid="uid://c4mnho5ipddoy" path="res://egg.gd" id="1_6upkn"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6upkn"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_60cwx"]
+
+[node name="Egg" type="CharacterBody3D" unique_id=284308363]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+script = ExtResource("1_6upkn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1995340450]
+shape = SubResource("SphereShape3D_6upkn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=914095376]
+mesh = SubResource("SphereMesh_60cwx")

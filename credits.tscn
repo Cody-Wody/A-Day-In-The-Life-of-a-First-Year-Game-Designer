@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://ctcx3ll4ehvbd"]
+
+[ext_resource type="Texture2D" uid="uid://ck6reh2a1vti" path="res://Bedroom Assets/GDLife - Cody's Room.png" id="1_c1t8d"]
+[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://fonts/Super Mindset.ttf" id="1_nm7lk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nm7lk"]
+font = ExtResource("1_nm7lk")
+font_size = 120
+
+[sub_resource type="LabelSettings" id="LabelSettings_t5rx0"]
+font = ExtResource("1_nm7lk")
+font_size = 60
+
+[node name="Node2D" type="Node2D" unique_id=1179083336]
+
+[node name="GdLifeCody\'sRoom" type="Sprite2D" parent="." unique_id=1489568285]
+position = Vector2(960, 540)
+texture = ExtResource("1_c1t8d")
+
+[node name="Credits" type="MarginContainer" parent="." unique_id=65218736]
+offset_right = 1920.0
+offset_bottom = 1329.0
+theme_override_constants/margin_left = 300
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 300
+theme_override_constants/margin_bottom = 100
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Credits" unique_id=1298336257]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label4" type="Label" parent="Credits/VBoxContainer2" unique_id=205988097]
+layout_mode = 2
+text = "A Day in the Life of a First 
+Year Game Design Student"
+label_settings = SubResource("LabelSettings_nm7lk")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits/VBoxContainer2" unique_id=140984218]
+custom_minimum_size = Vector2(1080, 1080)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label5" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=1263367362]
+layout_mode = 2
+text = "Producer - CodyWody"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=160476776]
+layout_mode = 2
+text = "Game Designer - CodyWody"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=333498137]
+layout_mode = 2
+text = "Programmer - CodyWody"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=121770177]
+layout_mode = 2
+text = "Artist - CodyWody"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=1303116278]
+layout_mode = 2
+text = "Sound Designer - CodyWody"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=777044884]
+layout_mode = 2
+text = "Playtesters - CodyWody, Shaun Smith"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=1703506232]
+layout_mode = 2
+text = "Cats - Charlie, Oscar Meatballs, Nala"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1
+
+[node name="Label8" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=1876311653]
+layout_mode = 2
+text = "Chicken - Chicken"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1
+
+[node name="Label9" type="Label" parent="Credits/VBoxContainer2/VBoxContainer" unique_id=1893609436]
+layout_mode = 2
+text = "Special Thanks - Catster"
+label_settings = SubResource("LabelSettings_t5rx0")
+horizontal_alignment = 1

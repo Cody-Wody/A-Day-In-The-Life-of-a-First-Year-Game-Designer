@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ds1dr7n78ie1h"]
+
+[ext_resource type="Script" uid="uid://crn6np82u7v1o" path="res://timer_ui.gd" id="1_b5qdc"]
+[ext_resource type="FontFile" uid="uid://b5uyd7qygkq7c" path="res://alarm clock.ttf" id="3_521m4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_m6xn5"]
+font = ExtResource("3_521m4")
+font_size = 50
+font_color = Color(1, 0, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=2113451030]
+script = ExtResource("1_b5qdc")
+
+[node name="Label" type="Label" parent="." unique_id=43178819]
+offset_left = 8.0
+offset_right = 48.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_m6xn5")

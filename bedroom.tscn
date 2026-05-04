@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://bc38meh1htwe6"]
+
+[ext_resource type="Script" uid="uid://dkb3u5lkoap5t" path="res://bedroom.gd" id="1_ui2oe"]
+[ext_resource type="Texture2D" uid="uid://b6sdua7lb5nub" path="res://Bedroom Assets/GDLife - Cody's Keychain.png" id="3_o412v"]
+[ext_resource type="Texture2D" uid="uid://ck6reh2a1vti" path="res://Bedroom Assets/GDLife - Cody's Room.png" id="4_o412v"]
+[ext_resource type="Texture2D" uid="uid://doqr5oyvs8qcp" path="res://Bedroom Assets/GDLife - Cody's Laptop.png" id="5_885xx"]
+[ext_resource type="Script" uid="uid://bvkepxty0etcj" path="res://item.gd" id="5_o412v"]
+[ext_resource type="Texture2D" uid="uid://crgf7vxsd1251" path="res://Bedroom Assets/GDLife - Cody's Charger.png" id="6_6d2g4"]
+[ext_resource type="Texture2D" uid="uid://deaf3f7hb31q" path="res://Bedroom Assets/GDLife - Cody's Journal.png" id="6_j12bj"]
+
+[node name="Bedroom" type="Node2D" unique_id=762519953]
+script = ExtResource("1_ui2oe")
+
+[node name="GdLifeCody\'sRoom" type="Sprite2D" parent="." unique_id=1039357555]
+position = Vector2(960, 540)
+texture = ExtResource("4_o412v")
+
+[node name="Button" type="TextureButton" parent="." unique_id=2035702630]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 296.99997
+offset_top = 704.0
+offset_right = 547.0
+offset_bottom = 954.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("5_885xx")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_o412v")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="TextureButton" parent="." unique_id=1349801195]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1445.0
+offset_top = 164.0
+offset_right = 1695.0
+offset_bottom = 414.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_o412v")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_o412v")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="TextureButton" parent="." unique_id=1485020387]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 672.0
+offset_top = 577.0
+offset_right = 872.0
+offset_bottom = 777.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("6_j12bj")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_o412v")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="TextureButton" parent="." unique_id=1734956910]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1082.0
+offset_top = 674.0
+offset_right = 1232.0
+offset_bottom = 824.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("6_6d2g4")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_o412v")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

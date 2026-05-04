@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://34tm0f2hfd31"]
+
+[ext_resource type="Texture2D" uid="uid://bg8r40qf6p8o8" path="res://GDLife Storyboard 4.png" id="1_7m7va"]
+[ext_resource type="Script" uid="uid://dbkl8wevu013u" path="res://intro4.gd" id="2_7m7va"]
+
+[node name="Node2D" type="Node2D" unique_id=309023548]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1041686319]
+texture = ExtResource("1_7m7va")
+centered = false
+script = ExtResource("2_7m7va")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1404372334]
+anchor_mode = 0
