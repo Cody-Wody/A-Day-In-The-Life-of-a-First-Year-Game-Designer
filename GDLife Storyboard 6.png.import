@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://esvrqptunl5c"
-path="res://.godot/imported/fnafoffice.webp-addba2de9b53e968e69112bc807c7576.ctex"
+uid="uid://b0pb0n06utmmj"
+path="res://.godot/imported/GDLife Storyboard 6.png-ef02cca0f95d94e9f3b4582ce46b7ab0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fnafoffice.webp"
-dest_files=["res://.godot/imported/fnafoffice.webp-addba2de9b53e968e69112bc807c7576.ctex"]
+source_file="res://GDLife Storyboard 6.png"
+dest_files=["res://.godot/imported/GDLife Storyboard 6.png-ef02cca0f95d94e9f3b4582ce46b7ab0.ctex"]
 
 [params]
 

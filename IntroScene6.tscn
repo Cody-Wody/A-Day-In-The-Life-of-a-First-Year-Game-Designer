@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cbn23ghjocqct"]
 
-[ext_resource type="Texture2D" uid="uid://d07jo4bgwk8je" path="res://GDLife Storyboard 1.png" id="1_q4lwk"]
+[ext_resource type="Texture2D" uid="uid://b0pb0n06utmmj" path="res://GDLife Storyboard 6.png" id="1_q4lwk"]
 [ext_resource type="Script" uid="uid://d2sxn2x4xujhg" path="res://intro6.gd" id="2_q4lwk"]
 
 [node name="Node2D" type="Node2D" unique_id=309023548]

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ck6reh2a1vti" path="res://Bedroom Assets/GDLife - Cody's Room.png" id="1_c1t8d"]
 [ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://fonts/Super Mindset.ttf" id="1_nm7lk"]
+[ext_resource type="Script" uid="uid://chqxxosldyboc" path="res://gd_life_cody's_room.gd" id="2_g4wvt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nm7lk"]
 font = ExtResource("1_nm7lk")
@@ -16,12 +17,13 @@ font_size = 60
 [node name="GdLifeCody\'sRoom" type="Sprite2D" parent="." unique_id=1489568285]
 position = Vector2(960, 540)
 texture = ExtResource("1_c1t8d")
+script = ExtResource("2_g4wvt")
 
 [node name="Credits" type="MarginContainer" parent="." unique_id=65218736]
 offset_right = 1920.0
 offset_bottom = 1329.0
 theme_override_constants/margin_left = 300
-theme_override_constants/margin_top = 100
+theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 300
 theme_override_constants/margin_bottom = 100
 

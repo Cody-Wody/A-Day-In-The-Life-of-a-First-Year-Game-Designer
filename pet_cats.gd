@@ -11,7 +11,6 @@ func collect_food():
 
 func win_cat_game():
 		SelectSfx.play()
-		await SelectSfx.finished
 		TransitionScreen.transition()
 		await TransitionScreen.on_transition_finished
 		get_tree().change_scene_to_file("res://runbus.tscn")

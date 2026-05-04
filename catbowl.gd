@@ -21,4 +21,5 @@ func fill_bowl():
 	if get_parent() is CatFoodGame:
 		get_parent().collect_food()
 	area_2d.visible = false
+	SelectSfx.play()
 	queue_free()

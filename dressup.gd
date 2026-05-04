@@ -9,9 +9,7 @@ func collect_clothes():
 		win_dressup_game()
 
 func win_dressup_game():
-		SelectSfx.play()
-		await SelectSfx.finished
-		TransitionScreen.transition()
-		await TransitionScreen.on_transition_finished
-		get_tree().change_scene_to_file("res://bedroom.tscn")
-		pass
+	SelectSfx.play()
+	TransitionScreen.transition()
+	await TransitionScreen.on_transition_finished
+	get_tree().change_scene_to_file("res://bedroom.tscn")
