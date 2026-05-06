@@ -6,7 +6,7 @@ Class Group: TU984
 
 ## ****Gameplay Video****
 
-(LINK HERE)
+https://youtu.be/ZNiCKFWB95s?si=mw0x24NZomuqVKL3
 
 ## ****Screenshots****
 
@@ -80,34 +80,35 @@ This game should be played on (ITCH LINK HERE). Move the mouse and Left Click to
 ## ****List of Classes/Assets****
 | Class/Asset        | Source          | Use  |
 | ------------- |:-------------:| -----:|
-| mainmenu.gd     | Self Written | Hi |
-| button.gd     | Self Written | Hi |
-| dressup.gd     | Self Written | Hi |
-| drag_and_drop.gd     | Self Written | Hi |
-| bedroom.gd     | Self Written | Hi |
-| item.gd     | Self Written | Hi |
-| pet_cats.gd     | Self Written | Hi |
-| catbowl.gd     | Self Written | Hi |
-| cat_food.gd     | Self Written | Hi |
-| runbus.gd     | Self Written | Hi |
-| player.gd     | Self Written | Hi |
-| car_spawner.gd     | Self Written | Hi |
-| car.gd     | Self Written | Hi |
-| car_crashed.gd     | Self Written | Hi |
-| enemy_spawner.gd     | Self Written | Hi |
-| enemy.gd     | Self Written | Hi |
-| cutscene_controller.gd     | Self Written | Hi |
-| bus.gd     | Self Written | Hi |
-| credits.gd   | Self Written | Hi |
-| intro1.gd     | Self Written | Hi |
-| intro2.gd     | Self Written | Hi |
-| intro3.gd     | Self Written | Hi |
-| intro4.gd     | Self Written | Hi |
-| intro5.gd     | Self Written | Hi |
-| intro6.gd     | Self Written | Hi |
-| music.gd   | Self Written | Hi |
-| timer_ui.gd   | Self Written | Hi |
-| game_over.gd   | Self Written | Hi |
+| mainmenu.gd     | Self Written | Resets the game's scores, timer, and connects play and credits buttons to their respective scenes. |
+| button.gd     | Self Written | Sets the tween on all buttons, making them scale and disappear. |
+| dressup.gd     | Self Written | Controls the dress-up minigame and sends the player to the next scene. |
+| drag_and_drop.gd     | Self Written | Makes items able to be picked up and dropped. |
+| bedroom.gd     | Self Written | Controls the collect-items minigame and sends the player to the next scene. |
+| item.gd     | Self Written | Sets the tween on all items, and makes them disappear. |
+| pet_cats.gd     | Self Written | Controls the feed-cats minigame, plays the cats' meows, and sends the player to the next scene. |
+| catbowl.gd     | Self Written | Fills the cat bowls when the cat food is put on them. |
+| cat_food.gd     | Self Written | Fills the cat bowls when dragged onto them. |
+| runbus.gd     | Self Written | Makes the scene end and transition to the main menu 3 seconds after entering the bus. |
+| player.gd     | Self Written | Player controller. |
+| car_spawner.gd     | Self Written | Spawns car scenes within a certain area, and deactivates when the player gets close enough to it. |
+| car.gd     | Self Written | Makes cars move at a constant speed along the z-axis and gives the cars random colours. |
+| car_crashed.gd     | Self Written | Gives the cars random colours. |
+| enemy_spawner.gd     | Self Written | Spawns the enemy once the player enters an Area3d. |
+| enemy.gd     | Self Written | Makes the enemy fall and start following the player after the cutscene, trying to eliminate the player in an Area3D (hitbox). |
+| cutscene_controller.gd     | Self Written | Causes and controls the cutscene once the player enters an Area3D. |
+| bus.gd     | Self Written | Makes the bus move along the x axis and moves the player's camera once they enter its Area3D. |
+| credits.gd   | Self Written | Brings player back to the main menu when the screen is clicked. |
+| intro1.gd     | Self Written | Click to go to the next sequence. |
+| intro2.gd     | Self Written | Click to go to the next sequence. |
+| intro3.gd     | Self Written | Click to go to the next sequence. |
+| intro4.gd     | Self Written | Click to go to the next sequence. |
+| intro5.gd     | Self Written | Click to go to the next sequence. |
+| intro6.gd     | Self Written | Click to go to the next sequence and start the timer. |
+| music.gd   | Self Written | Plays the background music globally. |
+| timer_ui.gd   | Self Written | Controls the timer through global functions called by other scripts and tweens. |
+| game_over.gd   | Self Written | Resets the game's scores, timer, and connects try again and menu buttons to their respective scenes. |
+| transition_screen.gd   | Self Written | Controls the transition screen between scenes through global functions called by other scripts. |
 
 ## ****What I Am Most Proud of in This Assignment****
 
