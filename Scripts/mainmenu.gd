@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready() -> void:
+	Music.play_music()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	Dressup.clothes_counter = 0
 	Bedroom.item_counter = 0

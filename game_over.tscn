@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dgv21ioh4l3i3"]
 
-[ext_resource type="Script" uid="uid://37xthqsitdyw" path="res://game_over.gd" id="1_ccer4"]
-[ext_resource type="Script" uid="uid://b246t6m8y0h4g" path="res://button.gd" id="1_yxx3c"]
-[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://fonts/Super Mindset.ttf" id="3_8u835"]
+[ext_resource type="Script" uid="uid://37xthqsitdyw" path="res://Scripts/game_over.gd" id="1_ccer4"]
+[ext_resource type="Script" uid="uid://b246t6m8y0h4g" path="res://Scripts/button.gd" id="1_yxx3c"]
+[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://Fonts/Super Mindset.ttf" id="3_8u835"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8u835"]
 line_spacing = 0.0

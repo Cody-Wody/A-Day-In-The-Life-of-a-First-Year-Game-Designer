@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d0rx1oiyhecuq"
-path="res://.godot/imported/LifeGD Drop Sound.wav-9a76c9837757750a3ddb5c2e81e6c1a4.sample"
+path="res://.godot/imported/LifeGD Drop Sound.wav-78b0976822853f4352708cd908ec4cae.sample"
 
 [deps]
 
-source_file="res://LifeGD Drop Sound.wav"
-dest_files=["res://.godot/imported/LifeGD Drop Sound.wav-9a76c9837757750a3ddb5c2e81e6c1a4.sample"]
+source_file="res://SFX/LifeGD Drop Sound.wav"
+dest_files=["res://.godot/imported/LifeGD Drop Sound.wav-78b0976822853f4352708cd908ec4cae.sample"]
 
 [params]
 

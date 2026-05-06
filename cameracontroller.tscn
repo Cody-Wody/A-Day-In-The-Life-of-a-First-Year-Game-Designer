@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dm1g8i3ldyosc"]
 
-[ext_resource type="Script" uid="uid://2isduaor3k6t" path="res://cameracontroller.gd" id="1_vuxa1"]
+[ext_resource type="Script" uid="uid://2isduaor3k6t" path="res://Scripts/cameracontroller.gd" id="1_vuxa1"]
 
 [sub_resource type="Curve3D" id="Curve3D_vuxa1"]
 

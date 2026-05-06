@@ -13,7 +13,6 @@ config_version=5
 config/name="The Life of a Game Designer"
 run/main_scene="uid://br5a0rtbxedhq"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="res://icon.svg"
 
 [autoload]
 
@@ -29,6 +28,7 @@ GameOver="*uid://dgv21ioh4l3i3"
 Bedroom="*uid://dkb3u5lkoap5t"
 CarSpawner="*uid://c4ybdd68bacuf"
 EnemySpawner="*uid://dipvqgaa7uhm8"
+Music="*uid://cfn3a0lks30n0"
 
 [display]
 

@@ -1,10 +1,8 @@
 extends Node3D
 
 @export var speed := 20.0
-
 @export var camera_target_position := Vector3(10, 5, -20)
 @export var camera_look_at := Vector3(0, 0, 0)
-
 @onready var area: Area3D = $Area3D
 
 var moving := false
@@ -42,9 +40,8 @@ func set_fixed_camera():
 	var cam_transform := Transform3D()
 	cam_transform.origin = camera_target_position
 	cam_transform = cam_transform.looking_at(camera_look_at, Vector3.UP)
-
+	
 	player_camera.global_transform = cam_transform
-
 
 func _process(delta):
 	if moving:

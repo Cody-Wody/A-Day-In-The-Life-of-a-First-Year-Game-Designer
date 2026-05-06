@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c3xt2fc1g1kyc"]
 
 [ext_resource type="Texture2D" uid="uid://dkoghm6lxyal8" path="res://Dress-Up Assets/Dress-up Game Jeans.png" id="1_mdrij"]
-[ext_resource type="Script" uid="uid://dbmut3yphfaaq" path="res://drag_and_drop.gd" id="2_undmj"]
-[ext_resource type="AudioStream" uid="uid://bwcepwk7y48iw" path="res://LifeGD Pickup Sound.wav" id="3_wvamo"]
+[ext_resource type="Script" uid="uid://dbmut3yphfaaq" path="res://Scripts/drag_and_drop.gd" id="2_undmj"]
+[ext_resource type="AudioStream" uid="uid://bwcepwk7y48iw" path="res://SFX/LifeGD Pickup Sound.wav" id="3_wvamo"]
 
 [node name="Sprite2D" type="Sprite2D" unique_id=488543471 node_paths=PackedStringArray("audio_stream_player", "area_2d") groups=["Clothing"]]
 texture = ExtResource("1_mdrij")

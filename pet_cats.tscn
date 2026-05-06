@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bmhlws33ca5iv"]
 
-[ext_resource type="Script" uid="uid://dkgmyrh00dfc0" path="res://pet_cats.gd" id="1_otc2p"]
+[ext_resource type="Script" uid="uid://dkgmyrh00dfc0" path="res://Scripts/pet_cats.gd" id="1_otc2p"]
 [ext_resource type="Texture2D" uid="uid://cujlrq0mhjw3v" path="res://Cat Assets/Cats - Charlie.png" id="1_pd52j"]
 [ext_resource type="Texture2D" uid="uid://ow7q142xso8c" path="res://Cat Assets/Cat Pics/Charlie Yawn.jpeg" id="2_brwxd"]
 [ext_resource type="Texture2D" uid="uid://clr5xw17iip7y" path="res://Cat Assets/GDLife - Cats Background.png" id="2_tj3xi"]
@@ -8,11 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://jvtnykuulmep" path="res://Cat Assets/Cats - Oscar.png" id="3_otc2p"]
 [ext_resource type="Texture2D" uid="uid://4kelnh36dokt" path="res://Cat Assets/Cats - Nala.png" id="5_tal6u"]
 [ext_resource type="Texture2D" uid="uid://bisugm2eg3wxg" path="res://Cat Assets/Cat Pics/Nala Stare.png" id="6_otc2p"]
-[ext_resource type="AudioStream" uid="uid://1micpp4wjj6w" path="res://LifeGD Success Sound.wav" id="10_1f4eo"]
+[ext_resource type="AudioStream" uid="uid://1micpp4wjj6w" path="res://SFX/LifeGD Success Sound.wav" id="10_1f4eo"]
 [ext_resource type="Texture2D" uid="uid://cmjlmuoforliy" path="res://Cat Assets/Cat Bowl Full.png" id="10_4wst2"]
 [ext_resource type="PackedScene" uid="uid://d4babqgrjg1dg" path="res://catfood.tscn" id="10_5dedr"]
 [ext_resource type="Texture2D" uid="uid://dg56p8s035jvl" path="res://Cat Assets/Cat Food.png" id="10_tj3xi"]
-[ext_resource type="Script" uid="uid://dd7e2atje86do" path="res://cat_food.gd" id="11_5dedr"]
+[ext_resource type="Script" uid="uid://dd7e2atje86do" path="res://Scripts/cat_food.gd" id="11_5dedr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1f4eo"]
 size = Vector2(557.3417, 810)

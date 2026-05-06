@@ -9,6 +9,7 @@ func _ready() -> void:
 	pressed.connect(_button_pressed)
 	
 	call_deferred("_init_pivot")
+
 func _init_pivot() -> void:
 	pivot_offset = size/2.0
 

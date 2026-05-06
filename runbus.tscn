@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://c0lt8qd2i67qd"]
 
 [ext_resource type="PackedScene" uid="uid://ckuphdoie4due" path="res://player.tscn" id="1_1d60u"]
-[ext_resource type="Script" uid="uid://bnftvpt84r63j" path="res://cutscene_controller.gd" id="1_m2x24"]
-[ext_resource type="Script" uid="uid://bwvg6xnnh8kqi" path="res://runbus.gd" id="1_pbyiy"]
-[ext_resource type="Script" uid="uid://c4ybdd68bacuf" path="res://car_spawner.gd" id="2_mffu6"]
+[ext_resource type="Script" uid="uid://bnftvpt84r63j" path="res://Scripts/cutscene_controller.gd" id="1_m2x24"]
+[ext_resource type="Script" uid="uid://bwvg6xnnh8kqi" path="res://Scripts/runbus.gd" id="1_pbyiy"]
+[ext_resource type="Script" uid="uid://c4ybdd68bacuf" path="res://Scripts/car_spawner.gd" id="2_mffu6"]
 [ext_resource type="PackedScene" uid="uid://bioh1vuawnlko" path="res://car.tscn" id="2_ywjs7"]
-[ext_resource type="Script" uid="uid://kkkt54ul3jf3" path="res://carcrashed.gd" id="5_1d60u"]
-[ext_resource type="Script" uid="uid://dipvqgaa7uhm8" path="res://enemy_spawner.gd" id="5_m2x24"]
-[ext_resource type="Script" uid="uid://dnvejocrantrr" path="res://bus.gd" id="7_jo7vb"]
+[ext_resource type="Script" uid="uid://kkkt54ul3jf3" path="res://Scripts/car_crashed.gd" id="5_1d60u"]
+[ext_resource type="Script" uid="uid://dipvqgaa7uhm8" path="res://Scripts/enemy_spawner.gd" id="5_m2x24"]
+[ext_resource type="Script" uid="uid://dnvejocrantrr" path="res://Scripts/bus.gd" id="7_jo7vb"]
 [ext_resource type="PackedScene" uid="uid://bc7xpm4hskk54" path="res://chicken.tscn" id="7_pbyiy"]
+[ext_resource type="AudioStream" uid="uid://clr4ypi834ton" path="res://SFX/Chicken.mp3" id="8_d0luf"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pbyiy"]
 
@@ -229,15 +230,19 @@ wait_time = 0.75
 autostart = true
 
 [node name="Enemy spawner" type="Node3D" parent="." unique_id=526023369]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.19408, 4.4860315, -207.6406)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.19408, 8.305807, -207.6406)
 script = ExtResource("5_m2x24")
 enemy_scene = ExtResource("7_pbyiy")
 
 [node name="Area3D" type="Area3D" parent="Enemy spawner" unique_id=597303140]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.97653, -4.497013, 12.9904175)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.97653, -8.0638685, 12.9904175)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy spawner/Area3D" unique_id=834836655]
 shape = SubResource("BoxShape3D_rmllq")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Enemy spawner" unique_id=739131106]
+stream = ExtResource("8_d0luf")
+volume_db = 40.0
 
 [node name="Bus" type="StaticBody3D" parent="." unique_id=1704290201]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25, 4, -214)

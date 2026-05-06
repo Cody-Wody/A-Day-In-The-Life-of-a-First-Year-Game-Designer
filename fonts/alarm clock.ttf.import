@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b5uyd7qygkq7c"
-path="res://.godot/imported/alarm clock.ttf-56f3cae045b9cfa753ba66645a4f2437.fontdata"
+path="res://.godot/imported/alarm clock.ttf-750a7ceef9f0d9e948e489f246dd7fa4.fontdata"
 
 [deps]
 
-source_file="res://fonts/alarm clock.ttf"
-dest_files=["res://.godot/imported/alarm clock.ttf-56f3cae045b9cfa753ba66645a4f2437.fontdata"]
+source_file="res://Fonts/alarm clock.ttf"
+dest_files=["res://.godot/imported/alarm clock.ttf-750a7ceef9f0d9e948e489f246dd7fa4.fontdata"]
 
 [params]
 

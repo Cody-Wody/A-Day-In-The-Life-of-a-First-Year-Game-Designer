@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://c6tbdva1ca6km" path="res://Cat Assets/Cat Bowl.png" id="1_jm7bi"]
 [ext_resource type="Texture2D" uid="uid://cmjlmuoforliy" path="res://Cat Assets/Cat Bowl Full.png" id="1_pil02"]
-[ext_resource type="Script" uid="uid://ur8nrpk6kt0t" path="res://catbowl.gd" id="2_pil02"]
-[ext_resource type="AudioStream" uid="uid://bwcepwk7y48iw" path="res://LifeGD Pickup Sound.wav" id="3_pil02"]
+[ext_resource type="Script" uid="uid://ur8nrpk6kt0t" path="res://Scripts/catbowl.gd" id="2_pil02"]
+[ext_resource type="AudioStream" uid="uid://bwcepwk7y48iw" path="res://SFX/LifeGD Pickup Sound.wav" id="3_pil02"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y2uuw"]
 animations = [{

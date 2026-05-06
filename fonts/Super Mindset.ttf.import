@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c0jfxtqw6alwh"
-path="res://.godot/imported/Super Mindset.ttf-c235d2f2d5b069139f284fca4949d3f7.fontdata"
+path="res://.godot/imported/Super Mindset.ttf-4a069e75570ef8b92307629796ac4dc7.fontdata"
 
 [deps]
 
-source_file="res://fonts/Super Mindset.ttf"
-dest_files=["res://.godot/imported/Super Mindset.ttf-c235d2f2d5b069139f284fca4949d3f7.fontdata"]
+source_file="res://Fonts/Super Mindset.ttf"
+dest_files=["res://.godot/imported/Super Mindset.ttf-4a069e75570ef8b92307629796ac4dc7.fontdata"]
 
 [params]
 

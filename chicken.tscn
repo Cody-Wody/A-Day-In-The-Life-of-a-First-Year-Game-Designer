@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bc7xpm4hskk54"]
 
 [ext_resource type="PackedScene" uid="uid://yrejli74xwru" path="res://Chicken.gltf" id="1_isa2u"]
-[ext_resource type="Script" uid="uid://7sbgung7hr81" path="res://enemy.gd" id="1_tl7hd"]
+[ext_resource type="Script" uid="uid://7sbgung7hr81" path="res://Scripts/enemy.gd" id="1_tl7hd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jo7vb"]
 size = Vector3(1, 1.2, 1)

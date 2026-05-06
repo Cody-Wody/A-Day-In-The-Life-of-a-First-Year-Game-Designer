@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bwcepwk7y48iw"
-path="res://.godot/imported/LifeGD Pickup Sound.wav-93f5c78e51a64982ee6f4b009d04afd1.sample"
+path="res://.godot/imported/LifeGD Pickup Sound.wav-473421e83ef1b75c0af6ec143fae400e.sample"
 
 [deps]
 
-source_file="res://LifeGD Pickup Sound.wav"
-dest_files=["res://.godot/imported/LifeGD Pickup Sound.wav-93f5c78e51a64982ee6f4b009d04afd1.sample"]
+source_file="res://SFX/LifeGD Pickup Sound.wav"
+dest_files=["res://.godot/imported/LifeGD Pickup Sound.wav-473421e83ef1b75c0af6ec143fae400e.sample"]
 
 [params]
 

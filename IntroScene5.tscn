@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://6ckwhu6xat51"]
 
 [ext_resource type="Texture2D" uid="uid://cpt4io2dxkja1" path="res://GDLife Storyboard 5.png" id="1_vgdg2"]
-[ext_resource type="Script" uid="uid://b0qn21m8d0klh" path="res://intro5.gd" id="2_vgdg2"]
+[ext_resource type="Script" uid="uid://b0qn21m8d0klh" path="res://Scripts/intro5.gd" id="2_vgdg2"]
 
 [node name="Node2D" type="Node2D" unique_id=309023548]
 

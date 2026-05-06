@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b3cd6wkuinukb"]
 
 [ext_resource type="Texture2D" uid="uid://d07jo4bgwk8je" path="res://GDLife Storyboard 1.png" id="1_sehxo"]
-[ext_resource type="Script" uid="uid://biucrpw5k6257" path="res://sprite_2d.gd" id="2_sehxo"]
-[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://fonts/Super Mindset.ttf" id="3_iok7r"]
+[ext_resource type="Script" uid="uid://biucrpw5k6257" path="res://Scripts/intro1.gd" id="2_sehxo"]
+[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://Fonts/Super Mindset.ttf" id="3_iok7r"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_m3s84"]
 font = ExtResource("3_iok7r")

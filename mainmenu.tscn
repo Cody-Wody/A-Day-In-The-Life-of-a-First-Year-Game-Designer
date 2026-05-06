@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://br5a0rtbxedhq"]
 
-[ext_resource type="Script" uid="uid://cqxo4cfbfyti1" path="res://mainmenu.gd" id="1_d2nv2"]
-[ext_resource type="Script" uid="uid://b246t6m8y0h4g" path="res://button.gd" id="2_igs2m"]
-[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://fonts/Super Mindset.ttf" id="2_wgsso"]
+[ext_resource type="Script" uid="uid://cqxo4cfbfyti1" path="res://Scripts/mainmenu.gd" id="1_d2nv2"]
+[ext_resource type="Script" uid="uid://b246t6m8y0h4g" path="res://Scripts/button.gd" id="2_igs2m"]
+[ext_resource type="FontFile" uid="uid://c0jfxtqw6alwh" path="res://Fonts/Super Mindset.ttf" id="2_wgsso"]
 [ext_resource type="Texture2D" uid="uid://ck6reh2a1vti" path="res://Bedroom Assets/GDLife - Cody's Room.png" id="4_igs2m"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_i26rj"]

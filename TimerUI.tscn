@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ds1dr7n78ie1h"]
 
-[ext_resource type="Script" uid="uid://crn6np82u7v1o" path="res://timer_ui.gd" id="1_b5qdc"]
-[ext_resource type="FontFile" uid="uid://b5uyd7qygkq7c" path="res://fonts/alarm clock.ttf" id="3_521m4"]
+[ext_resource type="Script" uid="uid://crn6np82u7v1o" path="res://Scripts/timer_ui.gd" id="1_b5qdc"]
+[ext_resource type="FontFile" uid="uid://b5uyd7qygkq7c" path="res://Fonts/alarm clock.ttf" id="3_521m4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_m6xn5"]
 font = ExtResource("3_521m4")

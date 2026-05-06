@@ -47,7 +47,6 @@ func _on_area_2d_input_event(_viewport: Node, event: InputEvent, _shape_idx: int
 					selected = true
 					
 					if Dressup.clothes_counter != Dressup.total_clothes:
-						# NORMAL ITEM SOUND
 						audio_stream_player.pitch_scale = 1.3
 					
 					audio_stream_player.play()

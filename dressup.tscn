@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://dx52cjaxx6n3f"]
 
-[ext_resource type="Script" uid="uid://dqidcy425ryej" path="res://dressup.gd" id="1_ak2qx"]
+[ext_resource type="Script" uid="uid://dqidcy425ryej" path="res://Scripts/dressup.gd" id="1_ak2qx"]
 [ext_resource type="Texture2D" uid="uid://m6t8cl3rqbvq" path="res://Dress-Up Assets/Dress-up Game Base.png" id="1_b04ev"]
 [ext_resource type="Texture2D" uid="uid://bmdscvb0g7ann" path="res://GDLife - Dress-Up Background.png" id="2_0uia8"]
 [ext_resource type="PackedScene" uid="uid://c3xt2fc1g1kyc" path="res://outfit-jeans.tscn" id="2_cj3ah"]
 [ext_resource type="PackedScene" uid="uid://kvaakvj423kr" path="res://outfit-shirt.tscn" id="3_bym3q"]
 [ext_resource type="PackedScene" uid="uid://cmxoa5837tg14" path="res://outfit-shoes.tscn" id="4_ta1bk"]
 [ext_resource type="PackedScene" uid="uid://c1lnbi1sri01w" path="res://outfit-jacket.tscn" id="5_dglhs"]
-[ext_resource type="AudioStream" uid="uid://1micpp4wjj6w" path="res://LifeGD Success Sound.wav" id="7_dau7d"]
+[ext_resource type="AudioStream" uid="uid://1micpp4wjj6w" path="res://SFX/LifeGD Success Sound.wav" id="7_dau7d"]
 
 [node name="Dress-Up Game" type="Node2D" unique_id=1691878615]
 script = ExtResource("1_ak2qx")

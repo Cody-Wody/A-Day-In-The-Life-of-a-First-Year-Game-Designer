@@ -30,10 +30,9 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		velocity.z = move_toward(velocity.z, 0, speed)
-
+	
 	move_and_slide()
-
-	# Face player
+	
 	var target = player.global_transform.origin
 	target.y = global_transform.origin.y
 	look_at(target, Vector3.UP)
