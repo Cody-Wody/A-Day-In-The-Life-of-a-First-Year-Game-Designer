@@ -1,3 +1,13 @@
+****A Day In The Life of a First Year Game Designer****
+
+Student Name: Cody McCreedy
+Student Number: A00037984
+Class Group: TU984
+
+
+
+
+
 The game will consist of 6 main scenes: a main menu, intro, dress-up minigame, collect items minigame, feed cats minigame, and run for the bus minigame.
 There will also be smaller scenes such as the timer, game over screen, credits, car spawner, and enemy spawner.
 I will be using Photoshop, Blockbench, and real photos for sprites and backgrounds for this game.
