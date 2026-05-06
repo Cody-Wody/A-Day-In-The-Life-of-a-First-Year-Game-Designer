@@ -79,6 +79,19 @@ text = "Credits
 "
 script = ExtResource("2_igs2m")
 
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer/MenuOptions" unique_id=497421870]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_wgsso")
+theme_override_font_sizes/font_size = 50
+text = "Quit
+
+"
+script = ExtResource("2_igs2m")
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/PlayButton2" to="." method="_on_play_button_2_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MenuOptions/QuitButton" to="." method="_on_credits_button_pressed"]

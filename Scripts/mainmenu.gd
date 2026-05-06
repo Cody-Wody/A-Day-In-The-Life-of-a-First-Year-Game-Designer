@@ -30,3 +30,9 @@ func _on_credits_button_pressed() -> void:
 	TransitionScreen.transition()
 	await TransitionScreen.on_transition_finished
 	get_tree().change_scene_to_file("res://credits.tscn")
+
+func _on_quit_button_pressed() -> void:
+	SelectSfx.play()
+	TransitionScreen.transition()
+	await TransitionScreen.on_transition_finished
+	get_tree().quit()
