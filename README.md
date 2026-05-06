@@ -1,80 +1,124 @@
-****A Day In The Life of a First Year Game Designer****
+# ******A Day In The Life of a First Year Game Designer******
 
-Student Name: Cody McCreedy
-Student Number: A00037984
-Class Group: TU984
+Student Name: Cody McCreedy  
+Student Number: A00037984  
+Class Group: TU984  
+
+## ****Gameplay Video****
+
+(LINK HERE)
+
+## ****Screenshots****
+
+### Main Menu
+<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/fc95e4fd-7f72-40d6-afb6-2dcf0cf5671d" />
+
+### Intro Sequence
+<img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/73c197dc-9443-4b01-93d6-f9a08c6effcf" />
+
+<img width="1920" height="1080" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/fc3f8b65-83ce-4684-a7cc-2b5c02971a77" />
+
+### Dress-Up Minigame
+<img width="1920" height="1080" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/b1198feb-e847-4cd9-8594-558d0f936a91" />
+
+### Collect-Items Minigame
+<img width="1920" height="1080" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/9a859ffb-3048-45ca-a62c-86a4cf6db0b1" />
+
+### Feed-Cats Minigame
+<img width="1920" height="1080" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/872ad006-bd27-4076-80ea-5bcc1dee3396" />
+
+### Run-for-the-Bus Minigame
+<img width="1920" height="1080" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/bcebebd0-2678-4b18-aba7-7694af36c3d5" />
+
+<img width="1920" height="1080" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/b998fde2-3fd1-40fd-9d16-e7ce600d18bb" />
+
+<img width="1920" height="1080" alt="Screenshot (39)" src="https://github.com/user-attachments/assets/38029f32-4f70-40cb-8c86-1cbfed0acbed" />
+
+### Game Over Screen
+<img width="1920" height="1080" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/cdbd77cf-121f-4bf5-af5d-45a39ce4d340" />
+
+### Credits Screen
+<img width="1920" height="1080" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/6716890b-9a62-4cb5-a9db-f68b02643637" />
+
+## ****Project Description****
+This game was created for my Computational Arts End of Semester Assignment 2026. In this game the player controls Cody, a college student who wakes up 3 minutes before his bus arrives. The player must complete a handful of Cody's morning tasks and run for the bus in order to make it to college on time. This is a fast-paced, time-attack game where players must complete a series of short minigames before the clock runs out, with a bit of inspiration taken from ***WarioWare***.
+
+
+## ****Instructions for Use****
+This game should be played on (ITCH LINK HERE). Move the mouse and Left Click to Drag, Drop, and Collect items in the 2D Scenes. Move the mouse to look around and use WASD to move in the 3D Scene.
+
+## ****How the Game Works****
+***A Day in the Life of a First Year Game Designer*** uses **Global Time Pressure**, **Rapid Task-Switching**, **Multi-Modal Gameplay (2D Precision & 3D Navigation)**, **Procedural Obstacles**, and **High-Risk, High-Reward Decision Making** to create a fast paced, chaotic challenge.
+
+### **Core Loop**
+-  Start minigame
+-  Complete task
+-  Next minigame
+-  Catch bus under 3 minutes (or 1 minute in **60 Second Rush**)
+
+### **Minigame Feedback Loops**
+#### Minigame 1 - Dress-Up
+-  Click clothing
+-  Drag onto Cody
+-  Repeat x4
+  
+#### Minigame 2 - Collect-Items
+-  Click item
+-  Repeat x4
+
+#### Minigame 3 - Feed-Cats
+-  Click catfood sachet
+-  Drag onto bowl
+-  Repeat x3
+
+#### Minigame 4 - Run-for-the-Bus
+-  Observe the area and the obstacle(s)
+-  Identify a viable path forward
+-  Avoid time loss from **Cars** (Push Back) and the **Chicken** (Game Over) 
+-  Get on the bus
+
+## ****List of Classes/Assets****
+| Class/Asset        | Source          | Use  |
+| ------------- |:-------------:| -----:|
+| mainmenu.gd     | Self Written | Hi |
+| button.gd     | Self Written | Hi |
+| dressup.gd     | Self Written | Hi |
+| drag_and_drop.gd     | Self Written | Hi |
+| bedroom.gd     | Self Written | Hi |
+| item.gd     | Self Written | Hi |
+| pet_cats.gd     | Self Written | Hi |
+| catbowl.gd     | Self Written | Hi |
+| cat_food.gd     | Self Written | Hi |
+| runbus.gd     | Self Written | Hi |
+| player.gd     | Self Written | Hi |
+| car_spawner.gd     | Self Written | Hi |
+| car.gd     | Self Written | Hi |
+| car_crashed.gd     | Self Written | Hi |
+| enemy_spawner.gd     | Self Written | Hi |
+| enemy.gd     | Self Written | Hi |
+| cutscene_controller.gd     | Self Written | Hi |
+| bus.gd     | Self Written | Hi |
+| credits.gd   | Self Written | Hi |
+| intro1.gd     | Self Written | Hi |
+| intro2.gd     | Self Written | Hi |
+| intro3.gd     | Self Written | Hi |
+| intro4.gd     | Self Written | Hi |
+| intro5.gd     | Self Written | Hi |
+| intro6.gd     | Self Written | Hi |
+| music.gd   | Self Written | Hi |
+| timer_ui.gd   | Self Written | Hi |
+| game_over.gd   | Self Written | Hi |
+
+## ****What I Am Most Proud of in This Assignment****
 
 
 
+## ****What Did I Learn?****
 
 
-The game will consist of 6 main scenes: a main menu, intro, dress-up minigame, collect items minigame, feed cats minigame, and run for the bus minigame.
-There will also be smaller scenes such as the timer, game over screen, credits, car spawner, and enemy spawner.
-I will be using Photoshop, Blockbench, and real photos for sprites and backgrounds for this game.
 
--1.1. Main Menu - Node2D
---The main menu will consist of a Story Mode button, a 60 Second Rush button, and a credits button.
----1. Story Mode: Plays the intro and the player has 3 minutes to beat the game.
----2. 60 Second Rush: Skips the intro and the player has 1 minute to beat the game.
----3. Credits: Brings the player to the credits screen.
-    
--1.2. Intro - Node2D
---The intro will be a storyboard of the main character (Cody/myself) with 6 different images.
----1. Cody is sleeping with a big snot bubble and Zs.
----2. Cody wakes up all drowsy.
----3. Cody checks his phone, seeing the time and an alert showing there is 3 minutes until his bus.
----4. The screen zooms into the alert.
----5. Cody's eyes come out of his face looking at his phone.
----6. Cody grabs his glasses with a smirk, with text saying "LOCK IN."
+## ****Code Examples****
 
--1.3. Dress-Up Minigame - Node2D
---A minigame where the player must click and drag clothes onto Cody. These clothes will include:
----1. Shirt
----2. Jacket
----3. Jeans
----4. Shoes
-
--1.4. Collect Items Minigame - Node2D
---A minigame where the player must click on items to pick them up. These items will include:
----1. Laptop
----2. TUD Journal
----3. Phone Charger
----4. Erubong Keychain (One of my OCs)
-
--1.5. Feed Cats Minigame - Node2D
---A minigame where the player must drag a sachet of cat food onto the 3 cat bowls. The player can also interact with the cats to make them meow like a soundboard. These cats include:
----1. Charlie
----2. Oscar
----3. Nala
-
--1.6. Run For the Bus Minigame - Node3D
---A minigame where the player must make their final sprint for the bus. To do this, the player must:
----1. Dodge speeding cars
----2. Run from a giant chicken (a chicken wanders around this area in real life)
----3. Get on the bus
-
--2.1. Timer - CanvasLayer
---A digital clock timer that appears once the intro ends, if the clock hits the max time: game over.
----1. Story Mode: Max time = 3 minutes
----2. 60 Second Rush: Max time = 1 minute
-
--2.2. Game Over - CanvasLayer
---A screen that appears once one of the events occur:
----1. The timer hits max time
----2. The chicken catches you
-
--2.3. Credits - Node2D
---A scene that displays the credits of the game. These include:
----1. Producer - CodyWody
----2. Game Designer - CodyWody
----3. Programmer - CodyWody
----4. Artist - CodyWody
----5. Playtesters - CodyWody, Shaun Smith
----6. Cats - Charlie, Oscar Meatballs, Nala
----7. Chicken - Chicken
----8. Special Thanks - Catser
-
--2.4. Car Spawner - Node3D
 --An object that can be placed and instantiate cars of random colours within random positions along an end of the road.
 
 -2.5 Enemy Spawner - Node3D
