@@ -45,7 +45,7 @@ This game was created for my Computational Arts End of Semester Assignment 2026.
 
 
 ## ****Instructions for Use****
-This game should be played on (ITCH LINK HERE). Move the mouse and Left Click to Drag, Drop, and Collect items in the 2D Scenes. Move the mouse to look around and use WASD to move in the 3D Scene.
+This game should be played on <a href="https://cody-wody.itch.io/a-day-in-the-life-of-a-first-year-game-designer">Itch.io</a>. Move the mouse and Left Click to Drag, Drop, and Collect items in the 2D Scenes. Move the mouse to look around and use WASD to move in the 3D Scene.
 
 ## ****How the Game Works****
 ***A Day in the Life of a First Year Game Designer*** uses **Global Time Pressure**, **Rapid Task-Switching**, **Multi-Modal Gameplay (2D Precision & 3D Navigation)**, **Procedural Obstacles**, and **High-Risk, High-Reward Decision Making** to create a fast paced, chaotic challenge.
