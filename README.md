@@ -109,6 +109,8 @@ This game should be played on (ITCH LINK HERE). Move the mouse and Left Click to
 | timer_ui.gd   | Self Written | Controls the timer through global functions called by other scripts and tweens. |
 | game_over.gd   | Self Written | Resets the game's scores, timer, and connects try again and menu buttons to their respective scenes. |
 | transition_screen.gd   | Self Written | Controls the transition screen between scenes through global functions called by other scripts. |
+| chicken.tlgf   | Self Made (Blockbench) | Model made for the chicken enemy. |
+All art assets across the game were all self-made in Photoshop.
 
 ## ****What I Am Most Proud of in This Assignment****
 I would say there's not a single part of this assignment I am not part of. This is my first ever big game project, and I am so happy with how it came out. I was able to combine these mechanics, art, and gameplay loops together to create a fun and enjoyable experience for all players, with a 3 minute long story mode for casual players and a one minute mode for players looking for a challenge.
